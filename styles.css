@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cta {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/desktop/image-header.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 116px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+#cta a {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+#cta button {
+    width: 162px;
+height: 49px;
+background: #FFFFFF;
+border-radius: 50px;
+border: none;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #000000;
+}
+
+#logo {
+    width: 186px;
+    height: 36px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 340px;
+}
+
+h1 {
+    margin-top: 121px;
+    text-align: center;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,600px) 450px;
+    grid-template-areas:"empty empty pic pic"
+                        "pic1 pic1 emp1 emp1"
+                        "pic2 pic2 pic3 pic3"
+                        /*testimonials section*/
+                        "pic4 pic5 pic6 pic7";
+}
+
+.child1 {
+    grid-area: empty;
+}
+
+.child2 {
+    grid-area: pic;
+    background-image: url("./images/desktop/image-transform.jpg");
+    background-size:cover;
+}
+
+.child3 {
+    grid-area: pic1;
+    background-image: url("./images/desktop/image-stand-out.jpg");
+    background-size:cover;
+}
+
+.child4 {
+    grid-area: pic2;
+    background-image: url("./images/desktop/image-graphic-design.jpg");
+    background-size:cover;
+}
+.child5 {
+    grid-area: pic3;
+    background-image: url("./images/desktop/image-photography.jpg");
+    background-size:cover;
+}
+.child6 {
+    grid-area: pic4;
+    background-image: url("./images/desktop/image-gallery-milkbottles.jpg");
+    background-size:cover;
+    background-position: center;
+}
+.child7 {
+    grid-area: pic5;
+    background-image: url("./images/desktop/image-gallery-orange.jpg");
+    background-size:cover;
+}
+.child8 {
+    grid-area: pic6;
+    background-image: url("./images/desktop/image-gallery-cone.jpg");
+    background-size:cover;
+}
+.child9 {
+    grid-area: pic7;
+    background-image: url("./images/desktop/image-gallery-sugarcubes.jpg");
+    background-size:cover;
+}
+
+.endpoint{
+    background-color: #90D4C5;
+    height: 320px;
+}
+
+#hamburger {
+    display: none;
+}
+
+#close-hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 376px) {
+
+    #nav-links {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100vh;
+        width: 50vw;
+        color: #000000;
+        background-color:#fff;
+        border-top-left-radius: 50px ;
+        border-bottom-left-radius: 50px ;
+        padding: 10px;
+        /* display: none; */
+    }
+
+    #nav-links a,
+    #nav-links a:visited {
+        color: #000000;
+        padding-top: 42px;
+    }
+
+    nav {
+        padding : 0;
+        align-items: flex-start;
+    }
+
+    #hamburger {
+        display: none;
+        margin-top: 26px;
+        margin-right: 31px;
+        cursor: pointer;
+    }
+
+    #close-hamburger {
+        display: block;
+    }
+
+    #cta {
+        background-image: url("./images/mobile/image-header.jpg");
+        background-position: center;
+    }
+
+    #cta button {
+        background-color: #000000;
+        color: #fff;
+        margin-top: 42px;
+    }
+
+    #logo {
+        width: 123.64px;
+        height: 24px;
+        margin-left: 31px;
+        margin-top: 26px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 58px;
+        position: absolute;
+        top: 100px;
+
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,178px) repeat(5,178px);
+        grid-template-areas: "empty empty"
+                             "pic pic"
+                             "pic1 pic1"
+                             "empty empty"
+                             "pic2 pic2"
+                             "pic3 pic3"
+                             "pic4 pic5"
+                             "pic6 pic7";
+        
+
+    }
+
+    .child2 {
+        grid-area: pic;
+        background-image: url("./images/mobile/image-transform.jpg");
+        background-size:cover;
+        background-position: center;
+    }
+    
+    .child3 {
+        grid-area: pic1;
+        background-image: url("./images/mobile/image-stand-out.jpg");
+        background-size:cover;
+    }
+    
+    .child4 {
+        grid-area: pic2;
+        background-image: url("./images/mobile/image-graphic-design.jpg");
+        background-size:cover;
+    }
+    .child5 {
+        grid-area: pic3;
+        background-image: url("./images/mobile/image-photography.jpg");
+        background-size:cover;
+    }
+    .child6 {
+        grid-area: pic4;
+        background-image: url("./images/mobile/image-gallery-milkbottles.jpg");
+        background-size:cover;
+        background-position: center;
+    }
+    .child7 {
+        grid-area: pic5;
+        background-image: url("./images/mobile/image-gallery-orange.jpg");
+        background-size:cover;
+    }
+    .child8 {
+        grid-area: pic6;
+        background-image: url("./images/mobile/image-gallery-cone.jpg");
+        background-size:cover;
+    }
+    .child9 {
+        grid-area: pic7;
+        background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
+        background-size:cover;
+    }
+
+
+
+
+
+
+    
+
+}
