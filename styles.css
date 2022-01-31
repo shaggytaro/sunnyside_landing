@@ -211,16 +211,15 @@ h1 {
 
     .parent {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,178px) repeat(5,178px);
-        grid-template-areas: "empty empty"
-                             "pic pic"
-                             "pic1 pic1"
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(4,200px);
+        grid-template-areas: "pic pic pic pic pic"
                              "empty empty"
-                             "pic2 pic2"
-                             "pic3 pic3"
-                             "pic4 pic5"
-                             "pic6 pic7";
+                             "pic1 pic1 pic1 pic1 pic1"
+                             "empty empty"
+                             "pic2 pic2 pic2 pic2 pic2"
+                             "pic3 pic3 pic3 pic3 pic3"
+                             "pic4 pic5 pic6 pic7";
         
 
     }
@@ -230,6 +229,10 @@ h1 {
         background-image: url("./images/mobile/image-transform.jpg");
         background-size:cover;
         background-position: center;
+    }
+
+    .child1 {
+        grid-area: empty;
     }
     
     .child3 {
@@ -269,12 +272,5 @@ h1 {
         background-image: url("./images/mobile/image-gallery-sugar-cubes.jpg");
         background-size:cover;
     }
-
-
-
-
-
-
-    
 
 }
